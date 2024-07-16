@@ -271,7 +271,30 @@ nav>ul>li>a {
 
 
 /* why choose us */
+.why-choose-us-text{
+    max-width: 643px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.why-choose-us-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.why-choose-us-cards h4{
+    color: var(--dark-heading);
+    font-size: 1.5rem;
+font-weight: 800;
+line-height: 30px;
+}
+
+.card-1, .card-2, .card-3{
+    max-width: 573px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: 2rem;
+}
 
 /* responsive */
 /* for mobile phones */
