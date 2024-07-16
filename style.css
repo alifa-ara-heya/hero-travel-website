@@ -9,6 +9,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -27,7 +28,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    max-width: 1440px;
     margin: 5rem auto;
     border-radius: 1rem;
     /* 1 rem = 16px */
@@ -55,13 +56,13 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: 0%;
     text-align: center;
     border: none;
-    padding: .5rem;
-    padding-left: 1.25rem;
-    width: 25%;
+    /* padding: .5rem; */
+    /* padding-left: 1.25rem; */
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
 }
 
@@ -84,7 +85,7 @@ body {
     margin-right: 1rem;
 }
 
-.logo h3 {
+.logo-heading {
     font-size: 2.25rem;
     font-weight: 800;
     color: var(--dark-heading);
@@ -104,7 +105,11 @@ body {
     display: flex;
     justify-content: space-evenly;
     gap: 2.75rem;
-    /* gap: 44px; */
+    /* display: none; */
+}
+
+.nav-logo {
+    display: none;
 }
 
 nav>ul>li {
@@ -133,6 +138,11 @@ nav>ul>li>a {
     align-items: center;
 }
 
+.travel-text-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .travel-heading {
     color: rgb(255, 255, 255);
     font-size: 4rem;
@@ -144,7 +154,7 @@ nav>ul>li>a {
 .banner p {
     color: white;
     margin-bottom: 2.5rem;
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
 }
 
@@ -159,24 +169,25 @@ nav>ul>li>a {
 }
 
 .travel-form input,
-select {
+.travel-form select,
+.travel-form button {
     border-radius: 8px;
     background: rgb(255, 255, 255);
-    /* border: 1px solid black; */
-    padding: 15px;
-    width: 174px;
-    /* width: 100%; */
-    /* height: 100%; */
+    padding: 1rem;
+    width: 100%;
     color: rgba(19, 19, 24, 0.5);
     font-size: 1rem;
     font-weight: 400;
+    border: none;
+}
+
+.travel-form button {
+    background-color: var(--orange);
+    color: white;
 }
 
 
-/* .form-child{
-    width: 100%;
-    height: 100%;
-} */
+
 
 
 
@@ -184,19 +195,43 @@ select {
 /* for mobile phones */
 @media screen and (max-width: 576px) {
 
-    .travel-form,
-    .nav-bar,
-    .nav-container {
+    .travel-form {
         flex-direction: column;
-        /* width: 85%; */
+        width: 85%;
+        margin: 0 auto;
     }
-    
-    .banner p{
-        /* width: 85%; */
+
+    .container {
+        margin: 3rem 1rem;
 
     }
-    .travel-form input, select, .btn-primary{
-        /* width: 90%; */
-        margin: auto;
+
+    .normal-paragraph,
+    .light-paragraph {
+        font-size: 0.875rem;
     }
+
+    .nav-container {
+        display: none;
+    }
+
+    .nav-logo {
+        display: block;
+    }
+
+    .nav-logo i {
+        font-size: 1.5rem;
+    }
+
+    .logo-heading,
+    .travel-heading {
+        font-size: 1.375rem;
+    }
+
+    .banner p {
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
 }
