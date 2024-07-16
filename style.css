@@ -190,45 +190,104 @@ nav>ul>li>a {
 }
 
 /* popular tours styles */
-.popular-tours{
+.popular-tours {
     display: flex;
     justify-content: center;
     /* gap: 1.5rem; */
 }
 
-
-.popular-tours-text{
+.popular-tours-text {
     max-width: 577px;
     margin: 0 auto;
-    text-align-last: left;
+    /* text-align: left; */
 }
 
-.popular-tours-text ul{
+.popular-tours-text h3 {
+    text-align: left;
+}
+
+.popular-tours-text ul {
     width: 80%;
-    padding: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
 }
 
-.popular-tours-text li{
+.popular-tours-text li {
     margin-bottom: 1.5rem;
 
 }
-.popular-tours-text p{
+
+.popular-tours-text p {
     margin-bottom: 1.5rem;
 }
+
+/* choose destination styles */
+.choose-destination-text {
+    max-width: 643px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.country-card img {
+    filter: brightness(70%);
+    width: 100%;
+    height: 300px;
+    /* width height na dile kaj korbe na */
+}
+
+.row-1, .row-2, .row-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    /* 24px */
+    margin: 1.5rem 0;
+}
+
+.row-2{
+    grid-template-columns: .8fr 1.5fr .7fr;
+}
+
+.row-3{
+    grid-template-columns: 0.75fr 1.25fr;
+}
+
+
+.country-card {
+    position: relative;
+}
+
+.country-card p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+    /* 28px */
+    font-weight: 800;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+/* why choose us */
+
+
 /* responsive */
 /* for mobile phones */
 @media screen and (max-width: 576px) {
 
-    .travel-form, .popular-tours {
+    .travel-form,
+    .popular-tours {
         flex-direction: column;
-        
+
     }
 
     .container {
         margin: 3rem 1rem;
     }
 
-    .heading{
+    .heading {
         font-size: 1.25rem;
     }
 
@@ -259,13 +318,32 @@ nav>ul>li>a {
         margin: 0 auto;
         margin-bottom: 2rem;
     }
-
-    .popular-tours-text{
+    /* popular tours */
+    .popular-tours-text {
         max-width: 335px;
         margin: 0 auto;
     }
 
-    .popular-tours-text ul{
+    .popular-tours-text ul {
         width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
     }
+
+    .popular-tours-text li {
+        margin-bottom: 0.75rem;
+        /* 12px */
+    }
+
+    .popular-tours-text p {
+        margin-bottom: .5rem;
+    }
+     /* choose destination */
+    .row-1, .row-2, .row-3{
+        grid-template-columns: 1fr;
+    }
+
+
+
+
 }
