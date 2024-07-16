@@ -5,16 +5,25 @@ body {
     font-family: "Mulish", sans-serif;
 }
 
-/* default styles */
+/* shared styles */
 * {
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
 }
 
 :root {
     --dark-02: rgb(66, 66, 71);
     --orange: rgb(255, 84, 0);
     --dark-heading: rgb(19, 19, 24);
+    --light-paragraph: rgba(19, 19, 24, 0.7);
+    --normal-paragraph: rgb(90, 90, 93);
+}
+
+.light-paragraph {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--light-paragraph);
+    line-height: 26px;
 }
 
 .container {
@@ -22,6 +31,38 @@ body {
     margin: 5rem auto;
     border-radius: 1rem;
     /* 1 rem = 16px */
+}
+
+.heading {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: var(--dark-heading);
+    text-align: center;
+}
+
+.normal-paragraph {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--normal-paragraph);
+    line-height: 26px;
+
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background: rgb(255, 84, 0);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    border: none;
+    padding: .5rem;
+    padding-left: 1.25rem;
+    width: 25%;
+    display: flex;
+    gap: 8px;
 }
 
 /* Navbar */
@@ -63,12 +104,14 @@ body {
 
 .nav-container {
     display: flex;
+    justify-content: space-evenly;
     gap: 2.75rem;
     /* gap: 44px; */
 }
 
 nav>ul>li {
     list-style-type: none;
+    display: inline-block;
 }
 
 nav>ul>li>a {
@@ -77,3 +120,60 @@ nav>ul>li>a {
     font-size: 1.125rem;
     font-weight: 400;
 }
+
+/* banner styles */
+
+.banner {
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url("./Images/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6.625rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel-heading {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.banner p {
+    color: white;
+    margin-bottom: 3rem;
+    width: 50%;
+    text-align: center;
+}
+
+.travel-form {
+    border-radius: 8px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    backdrop-filter: blur(4px);
+}
+
+.travel-form input, select {
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    border: none;
+    padding-left: 15px;
+    width: 25%;
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+/* re */
