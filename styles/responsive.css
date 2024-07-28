@@ -117,4 +117,17 @@
     .tour-details {
         flex-wrap: wrap;
     }
+
+    .travel-video{
+        flex-direction: column;
+    }
+
+    .travel-video-link{
+        width: 100%;
+    }
+
+    .travel-video-link iframe{
+        width: 100%;
+        /* height: 100%; */
+    }
 }

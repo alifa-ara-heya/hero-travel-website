@@ -425,3 +425,32 @@ nav>ul>li>a {
     backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.8);
 } */
+
+/* travel video section */
+.travel-video-texts .normal-paragraph{
+    font-weight: bold;
+}
+
+.travel-video-texts .heading{
+    text-align: left;
+}
+
+.travel-video-link{
+    width: 48%;
+    border: 1px solid transparent;
+}
+
+.travel-video-link iframe{
+    border-radius: 15px;
+}
+
+.travel-video{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel-video-texts ul{
+    padding: 25px;
+}
