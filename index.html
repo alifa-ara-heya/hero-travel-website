@@ -1,248 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hero travel page</title>
-    <!-- font awesome cdn -->
-    <script
-      src="https://kit.fontawesome.com/2a5d2a1714.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <!--navbar-->
-      <nav class="nav-bar container">
-        <!-- logo -->
-        <div class="logo">
-          <img src="./Images/logo.png" alt="logo" />
-          <h3 class="logo-heading">
-            Hero <span class="orange-travel">Travel</span>
-          </h3>
-        </div>
-        <!-- nav -->
-        <ul class="nav-container">
-          <li class="nav-item">
-            <a href="" class="nav-link"
-              ><span class="orange-home">Home</span></a
-            >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero travel page</title>
+  <!-- font awesome cdn -->
+  <script src="https://kit.fontawesome.com/2a5d2a1714.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+
+<body>
+  <header>
+    <!--navbar-->
+    <nav class="nav-bar container">
+      <!-- logo -->
+      <div class="logo">
+        <img src="./Images/logo.png" alt="logo" />
+        <h3 class="logo-heading">
+          Hero <span class="orange-travel">Travel</span>
+        </h3>
+      </div>
+      <!-- nav -->
+      <ul class="nav-container">
+        <li class="nav-item">
+          <a href="" class="nav-link"><span class="orange-home">Home</span></a>
+        </li>
+        <li class="nav-item"><a href="" class="nav-link">Packages</a></li>
+        <li class="nav-item"><a href="" class="nav-link">Testimonial</a></li>
+        <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-logo">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- banner section -->
+    <section class="banner container">
+      <div class="travel-text-container">
+        <h2 class="travel-heading">Explore Your Travel</h2>
+        <p class="normal-paragraph">
+          Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor
+          adipiscing. In et odio enim ac quis sapien urna eu phasellus.
+        </p>
+        <form action="" class="travel-form">
+          <input type="text" name="" id="" placeholder="Where go" />
+
+          <select name="" id="">
+            <option value="when">When</option>
+            <option value="today">Today</option>
+            <option value="tomorrow">Tomorrow</option>
+          </select>
+
+          <select name="" id="">
+            <option value="select-type">Select Type</option>
+            <option value="solo">Solo</option>
+            <option value="group">Group</option>
+          </select>
+
+          <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Find Now
+          </button>
+        </form>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- popular tours container -->
+    <section class="popular-tours container">
+      <div class="popular-tours-text">
+        <h3 class="heading">Our Popular Tours</h3>
+        <p class="light-paragraph">
+          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+          odio sit massa. Sodales dictumst nec nibh pellentesque.
+        </p>
+        <ul>
+          <li class="light-paragraph">
+            Tempus euismod lacus mauris dignissim quis in ultrices. Magna
+            nullam odio neque diam. Sociis erat at.
           </li>
-          <li class="nav-item"><a href="" class="nav-link">Packages</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Testimonial</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+          <li class="light-paragraph">
+            Adipiscing ornare pellentesque mauris volutpat tortor vitae platea
+            porta lacus. Lectus suspendisse nullam.
+          </li>
+          <li class="light-paragraph">
+            Accumsan eget et turpis praesent lorem egestas enim elit bibendum.
+            Risus at in.
+          </li>
         </ul>
-        <div class="nav-logo">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
+        <p class="light-paragraph">
+          Amet consectetur. Vulputate commodo felis molesti risus ornare nulla
+          amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant
+          adipiscing risus natoque aliquet. Id bibendum nunc senectus semper
+          tincidunt.
+        </p>
+        <button class="btn-primary">Read More</button>
+      </div>
 
-      <!-- banner section -->
-      <section class="banner container">
-        <div class="travel-text-container">
-          <h2 class="travel-heading">Explore Your Travel</h2>
-          <p class="normal-paragraph">
-            Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor
-            adipiscing. In et odio enim ac quis sapien urna eu phasellus.
-          </p>
-          <form action="" class="travel-form">
-            <input type="text" name="" id="" placeholder="Where go" />
+      <div class="popular-tours-image">
+        <img src="./Images/Rectangle 4.png" alt="" width="100%" />
+      </div>
+    </section>
+    <!-- choose destination section -->
+    <section class="choose-destination container">
+      <div class="choose-destination-text">
+        <h3 class="heading">Choose Your Destination</h3>
+        <p class="light-paragraph">
+          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+          odio sit massa. Sodales dictumst nec nibh pellentesque.
+        </p>
+      </div>
 
-            <select name="" id="">
-              <option value="when">When</option>
-              <option value="today">Today</option>
-              <option value="tomorrow">Tomorrow</option>
-            </select>
-
-            <select name="" id="">
-              <option value="select-type">Select Type</option>
-              <option value="solo">Solo</option>
-              <option value="group">Group</option>
-            </select>
-
-            <button>
-              <i class="fa-solid fa-magnifying-glass"></i>
-              Find Now
-            </button>
-          </form>
-        </div>
-      </section>
-    </header>
-
-    <main>
-      <!-- popular tours container -->
-      <section class="popular-tours container">
-        <div class="popular-tours-text">
-          <h3 class="heading">Our Popular Tours</h3>
-          <p class="light-paragraph">
-            Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
-            odio sit massa. Sodales dictumst nec nibh pellentesque.
-          </p>
-          <ul>
-            <li class="light-paragraph">
-              Tempus euismod lacus mauris dignissim quis in ultrices. Magna
-              nullam odio neque diam. Sociis erat at.
-            </li>
-            <li class="light-paragraph">
-              Adipiscing ornare pellentesque mauris volutpat tortor vitae platea
-              porta lacus. Lectus suspendisse nullam.
-            </li>
-            <li class="light-paragraph">
-              Accumsan eget et turpis praesent lorem egestas enim elit bibendum.
-              Risus at in.
-            </li>
-          </ul>
-          <p class="light-paragraph">
-            Amet consectetur. Vulputate commodo felis molesti risus ornare nulla
-            amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant
-            adipiscing risus natoque aliquet. Id bibendum nunc senectus semper
-            tincidunt.
-          </p>
-          <button class="btn-primary">Read More</button>
+      <!-- <div class="rows"> -->
+      <div class="row-1">
+        <div class="country-card">
+          <img src="./Images/maldives.png" alt="Maldives" />
+          <p>Maldives</p>
         </div>
 
-        <div class="popular-tours-image">
-          <img src="./Images/Rectangle 4.png" alt="" width="100%" />
+        <div class="country-card">
+          <img src="./Images/indonesia.png" alt="Indonesia" />
+          <p>Indonesia</p>
         </div>
-      </section>
-      <!-- choose destination section -->
-      <section class="choose-destination container">
-        <div class="choose-destination-text">
-          <h3 class="heading">Choose Your Destination</h3>
-          <p class="light-paragraph">
-            Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
-            odio sit massa. Sodales dictumst nec nibh pellentesque.
-          </p>
+      </div>
+
+      <div class="row-2">
+        <div class="country-card">
+          <img src="./Images/srilanka.png" alt="Srilanka" />
+          <p>Srilanka</p>
         </div>
 
-        <!-- <div class="rows"> -->
-        <div class="row-1">
-          <div class="country-card">
-            <img src="./Images/maldives.png" alt="Maldives" />
-            <p>Maldives</p>
-          </div>
-
-          <div class="country-card">
-            <img src="./Images/indonesia.png" alt="Indonesia" />
-            <p>Indonesia</p>
-          </div>
+        <div class="country-card">
+          <img src="./Images/north-america.png" alt="North America" />
+          <p>North America</p>
         </div>
 
-        <div class="row-2">
-          <div class="country-card">
-            <img src="./Images/srilanka.png" alt="Srilanka" />
-            <p>Srilanka</p>
-          </div>
+        <div class="country-card">
+          <img src="./Images/kashmir.png" alt="kashmir" />
+          <p>kashmir</p>
+        </div>
+      </div>
 
-          <div class="country-card">
-            <img src="./Images/north-america.png" alt="North America" />
-            <p>North America</p>
-          </div>
-
-          <div class="country-card">
-            <img src="./Images/kashmir.png" alt="kashmir" />
-            <p>kashmir</p>
-          </div>
+      <div class="row-3">
+        <div class="country-card">
+          <img src="./Images/bangladesh.png" alt="Bangladesh" />
+          <p>Bangladesh</p>
         </div>
 
-        <div class="row-3">
-          <div class="country-card">
-            <img src="./Images/bangladesh.png" alt="Bangladesh" />
-            <p>Bangladesh</p>
-          </div>
-
-          <div class="country-card">
-            <img src="./Images/bandarban.png" alt="Bandarban" />
-            <p>Bandarban</p>
-          </div>
+        <div class="country-card">
+          <img src="./Images/bandarban.png" alt="Bandarban" />
+          <p>Bandarban</p>
         </div>
-        <!-- </div> -->
-      </section>
+      </div>
+      <!-- </div> -->
+    </section>
 
-      <section class="why-choose-us container">
-        <div class="why-choose-us-text">
-          <h3 class="heading">Why Choose Us</h3>
-          <p class="light-paragraph">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
-        </div>
-        <div class="why-choose-us-cards">
-          <div class="card-1">
-            <img src="./Images/hotel-1.png" alt="">
-            <h4>Handpicked Hotels</h4>
-            <p class="normal-paragraph">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
-          </div>
-
-          <div class="card-2">
-            <img src="./Images/world-class-service.png" alt="">
-            <h4>World Class Service</h4>
-            <p class="normal-paragraph">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
-          </div>
-
-          <div class="card-3">
-            <img src="./Images/discounts.png" alt="">
-            <h4>Best Price Guarantee</h4>
-            <p class="normal-paragraph">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- deals section -->
-      <section class="deals container">
-        <div class="deals-text">
-          <h3 class="heading">Deals & Discounts</h3>
-          <p class="light-paragraph">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+    <section class="why-choose-us container">
+      <div class="why-choose-us-text">
+        <h3 class="heading">Why Choose Us</h3>
+        <p class="light-paragraph">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
+          Sodales dictumst nec nibh pellentesque.</p>
+      </div>
+      <div class="why-choose-us-cards">
+        <div class="card-1">
+          <img src="./Images/hotel-1.png" alt="">
+          <h4>Handpicked Hotels</h4>
+          <p class="normal-paragraph">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
+            Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
         </div>
 
+        <div class="card-2">
+          <img src="./Images/world-class-service.png" alt="">
+          <h4>World Class Service</h4>
+          <p class="normal-paragraph">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
+            Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
+        </div>
+
+        <div class="card-3">
+          <img src="./Images/discounts.png" alt="">
+          <h4>Best Price Guarantee</h4>
+          <p class="normal-paragraph">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
+            Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- deals section -->
+    <section class="deals container">
+      <div class="deals-text">
+        <h3 class="heading">Deals & Discounts</h3>
+        <p class="light-paragraph">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
+          Sodales dictumst nec nibh pellentesque.</p>
+      </div>
 
 
 
-        <div class="discount-cards">
-          <div class="discount-card-1">
-            <img src="./Images/relaxation-1.png" alt="">
-            <div class="tour-info">
-              <div class="tour-details">
-                <div><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</div>
-                <div><i class="fa-solid fa-people-group"></i> Max : 10
-                </div>
-                <div><i class="fa-solid fa-location-dot"></i>Malaysia</div>
+
+      <div class="discount-cards">
+        <div class="discount-card-1">
+          <img src="./Images/relaxation-1.png" alt="">
+          <div class="tour-info">
+            <div class="tour-details">
+              <div><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</div>
+              <div><i class="fa-solid fa-people-group"></i> Max : 10
               </div>
-              <h5 class="tour-heading">Tour To Satorini</h5>
-              <p class="normal-paragraph">Amet consectetur. Vulputate commodo felis 
-                molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
-              <span class="orange-price">Price: $1300-$1500</span>
-              <button class="btn-primary">Book Now</button>
+              <div><i class="fa-solid fa-location-dot"></i>Malaysia</div>
             </div>
+            <h5 class="tour-heading">Tour To Satorini</h5>
+            <p class="normal-paragraph">Amet consectetur. Vulputate commodo felis
+              molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant
+              adipiscing.</p>
+            <span class="orange-price">Price: $1300-$1500</span>
+            <button class="btn-primary">Book Now</button>
           </div>
-
-          <div class="discount-card-2">
-            
-          </div>
-          <div class="discount-card-3">
-            <img src="./Images/relaxation-1.png" alt="">
-            <div class="tour-info">
-              <div class="tour-details">
-                <div><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</div>
-                <div><i class="fa-solid fa-people-group"></i> Max : 10
-                </div>
-                <div><i class="fa-solid fa-location-dot"></i>Malaysia</div>
-              </div>
-              <h5 class="tour-heading">Tour To Satorini</h5>
-              <p class="normal-paragraph">Amet consectetur. Vulputate commodo felis 
-                molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
-              <span class="orange-price">Price: $1300-$1500</span>
-              <button class="btn-primary">Book Now</button>
-            </div>
-          </div>
-
         </div>
-          
-          
 
-      </section>
-    </main>
+        <div class="discount-card-2">
+          <img src="./Images/relaxation-2.png" alt="">
+          <div class="tour-info">
+            <div class="tour-details">
+              <div><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</div>
+              <div><i class="fa-solid fa-people-group"></i> Max : 10
+              </div>
+              <div><i class="fa-solid fa-location-dot"></i>Malaysia</div>
+            </div>
+            <h5 class="tour-heading">Tour To Satorini</h5>
+            <p class="normal-paragraph">Amet consectetur. Vulputate commodo felis
+              molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant
+              adipiscing.</p>
+            <span class="orange-price">Price: $1300-$1500</span>
+            <button class="btn-primary">Book Now</button>
+          </div>
+        </div>
+        <div class="discount-card-3">
+          <img src="./Images/relaxation-1.png" alt="">
+          <div class="tour-info">
+            <div class="tour-details">
+              <div><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</div>
+              <div><i class="fa-solid fa-people-group"></i> Max : 10
+              </div>
+              <div><i class="fa-solid fa-location-dot"></i>Malaysia</div>
+            </div>
+            <h5 class="tour-heading">Tour To Satorini</h5>
+            <p class="normal-paragraph">Amet consectetur. Vulputate commodo felis
+              molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant
+              adipiscing.</p>
+            <span class="orange-price">Price: $1300-$1500</span>
+            <button class="btn-primary">Book Now</button>
+          </div>
+        </div>
+        <div class="discount-btn">
+          <button class="btn-primary">See All Packages</button>
+        </div>
+      </div>
 
-    <footer></footer>
-  </body>
+
+
+    </section>
+  </main>
+
+  <footer></footer>
+</body>
+
 </html>
