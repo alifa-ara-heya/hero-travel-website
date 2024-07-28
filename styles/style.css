@@ -187,13 +187,11 @@ nav>ul>li>a {
 .popular-tours {
     display: flex;
     justify-content: center;
-    /* gap: 1.5rem; */
 }
 
 .popular-tours-text {
     width: 40%;
     margin: 0 auto;
-    /* text-align: left; */
 }
 
 .popular-tours-text h3 {
@@ -305,7 +303,7 @@ nav>ul>li>a {
 .card-1,
 .card-2,
 .card-3 {
-    max-width: 45%;
+    width: 45%;
     margin: 0 auto;
     padding: 2rem;
     border-radius: 16px;
@@ -340,7 +338,7 @@ nav>ul>li>a {
 .discount-card-3 {
     position: relative;
     border-radius: 16px;
-    /* overflow: hidden; */
+    overflow: hidden;
     margin-bottom: 2rem;
 }
 
@@ -352,21 +350,28 @@ nav>ul>li>a {
 
 .tour-info {
     position: absolute;
-    top: 50%;
-    right: 2.7%;
-    transform: translateY(-50%);
     border-radius: 16px;
     backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.8);
-    max-width: 580px;
+    /* max-width: 580px; */
+    width: 55%;
     padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
+.discount-card-1 .tour-info,
+.discount-card-3 .tour-info {
+    top: 50%;
+    right: 2.7%;
+    transform: translateY(-50%);
+}
+
 .discount-card-2 .tour-info {
+    top: 50%;
     left: 2.7%;
+    transform: translateY(-50%);
 }
 
 .tour-details {
