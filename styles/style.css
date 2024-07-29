@@ -419,7 +419,6 @@ nav>ul>li>a {
     flex-direction: column;
     max-width: 579px;
     padding: 50px 77px 50px 50px;
-    border: 1px solid #000;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 16px;
     backdrop-filter: blur(5px);
@@ -427,30 +426,146 @@ nav>ul>li>a {
 } */
 
 /* travel video section */
-.travel-video-texts .normal-paragraph{
+.travel-video-texts .normal-paragraph {
     font-weight: bold;
 }
 
-.travel-video-texts .heading{
+.travel-video-texts .heading {
     text-align: left;
 }
 
-.travel-video-link{
-    width: 48%;
+.travel-video-link {
+    /* width: 48%; */
     border: 1px solid transparent;
 }
 
-.travel-video-link iframe{
+.travel-video-link iframe {
     border-radius: 15px;
 }
 
-.travel-video{
+.travel-video {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.2rem;
     justify-content: center;
     align-items: center;
 }
 
-.travel-video-texts ul{
+.travel-video-texts ul {
     padding: 25px;
+}
+
+/* newsletter section */
+
+.newsletter {
+    display: flex;
+    gap: 1rem;
+}
+
+.newsletter-form {
+    width: 49%;
+    border: 1px solid var(--orange);
+    padding: 40px;
+    border-radius: 1rem;
+}
+
+.newsletter-form h4 {
+    color: var(--dark-heading);
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.newsletter-form hr {
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+    border: 1px solid rgba(19, 19, 24, 0.1);
+}
+
+.newsletter-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.newsletter-form input {
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(19, 19, 24, 0.3);
+    font-family: "Mulish";
+}
+
+.newsletter-image {
+    position: relative;
+    /* width: 50%; */
+}
+
+.newsletter-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-rotate h6 {
+    font-size: 1.2rem;
+}
+
+.btn-rotate p {
+    font-size: 2rem;
+}
+
+.btn-rotate {
+    position: absolute;
+    padding: 35px;
+    bottom: 12%;
+    right: 6.2%;
+    transform: rotate(-26deg) translateX(30px);
+}
+
+/* footer */
+.footer {
+    background: rgba(19, 19, 24, 0.05);
+    padding: 50px;
+}
+
+.footer-wrapper {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.social-media-icons a:visited {
+    color: #0000007b;
+}
+
+.social-media-icons {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.travel-logo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer .normal-paragraph {
+    text-align: center;
+}
+
+.footer hr {
+    width: 60%;
+    margin: 2rem auto;
 }
