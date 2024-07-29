@@ -553,6 +553,7 @@ nav>ul>li>a {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    color: var(--orange);
 }
 
 .travel-logo {
